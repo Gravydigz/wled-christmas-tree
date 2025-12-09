@@ -1,0 +1,42 @@
+# WLED Configuration
+wled:
+  # IP address or hostname of your WLED device
+  host: "192.168.1.100"
+
+  # Port for HTTP API (default: 80)
+  http_port: 80
+
+  # Port for WebSocket (default: 81)
+  ws_port: 81
+
+  # Use UDP streaming for real-time effects (DDP protocol)
+  use_udp: true
+  udp_port: 4048
+
+# LED Configuration
+leds:
+  # Total number of LEDs
+  count: 1610
+
+  # Frames per second for effects
+  fps: 30
+
+  # Default brightness (0-255)
+  brightness: 128
+
+# Effect Configuration
+effects:
+  # Enable smooth transitions between effects
+  smooth_transitions: true
+
+  # Transition duration in seconds
+  transition_duration: 1.0
+
+  # Auto-cycle through effects
+  auto_cycle: false
+  auto_cycle_interval: 30
+
+# Logging
+logging:
+  level: "INFO"  # DEBUG, INFO, WARNING, ERROR
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
